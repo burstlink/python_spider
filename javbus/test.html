@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="webkit" name="renderer"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>JavBus - AV磁力連結分享 - 日本成人影片資料庫</title>
+<meta content="AV磁力連結,線上AV,磁力連結分享,番號搜尋,日本成人影片" name="keywords"/>
+<meta content="線上日本成人影片磁力連結分享站，番號搜尋共享AV磁力連結。" name="description"/>
+<link href="https://www.seedmm.one/en" hreflang="en" rel="alternate"/>
+<link href="https://www.seedmm.one/ja" hreflang="ja" rel="alternate"/>
+<link href="https://www.seedmm.one/ko" hreflang="ko" rel="alternate"/>
+<link href="https://www.seedmm.one/" hreflang="zh" rel="alternate"/>
+<link href="https://www.seedmm.one/" hreflang="x-default" rel="alternate"/>
+<link href="https://www.seedmm.one/" rel="canonical"/>
+<link href="https://www.seedmm.one/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://www.seedmm.one/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<link href="https://www.seedmm.one/css/magnific-popup.css" rel="stylesheet"/>
+<link href="https://www.seedmm.one/css/base.css?v=4.4" rel="stylesheet" type="text/css"/>
+<link href="https://www.seedmm.one/css/nav.overlay.css?v=3.9.8" rel="stylesheet" type="text/css"/>
+<script src="https://www.seedmm.one/js/jquery.min.js"></script>
+<script src="https://www.seedmm.one/js/bootstrap.min.js"></script>
+<script src="https://www.seedmm.one/js/jquery.magnific-popup.min.js"></script>
+<script src="https://www.seedmm.one/js/jquery.cookie.min.js"></script>
+<script src="https://www.seedmm.one/js/base.js"></script>
+<script src="https://www.seedmm.one/js/bootstrap-hover-dropdown.js"></script>
+<!--[if lt IE 9]> <script src='https://www.seedmm.one/js/html5shiv.min.js'></script><script src='https://www.seedmm.one/js/respond.min.js'></script><![endif]-->
+</head>
+<body>
+<script language="JavaScript">
+var mod = 0;
+var lang = 'zh';
+var info = '搜尋 識別碼, 影片, 演員';
+function searchs(obj){
+	var searchinput = $("#"+obj);
+	if(searchinput.val()=='')
+	{
+		$('#magnet-url-post').trigger("click");
+		   return false;
+	}
+	else
+	{
+		//$('#search-loading').show();
+		window.open("https://www.seedmm.one/search/"+encodeURIComponent($.trim(searchinput.val()))+"&type=&parent=ce");
+	}
+}
+
+$(function(){
+
+	var url ='https://www.seedmm.one/ajax/search-modal.php?floor='+Math.floor(Math.random()*1000+1)+'&lang='+lang;
+       $.ajax({url: url,type: 'GET',success: function(msg){
+			$("#searchModal").append(msg);
+	   }});
+});
+</script>
+<div id="search-loading">
+<table border="0" cellpadding="0" cellspacing="0" class="search-loading-box">
+<tbody>
+<tr>
+<td align="center">
+<table border="0" cellpadding="0" cellspacing="0" height="80" width="100%">
+<tbody>
+<tr>
+<td align="center" height="40">
+<div class="search-loading-text">搜尋中...</div>
+</td>
+</tr>
+<tr>
+<td align="center" height="40">
+<img border="0" src="https://www.seedmm.one/images/search_loading.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Modal Search -->
+<div class="modal fade" id="searchModal" role="dialog" tabindex="-1"></div>
+<nav class="navbar navbar-default navbar-fixed-top top-bar" style="z-index:900">
+<div class="container-fluid">
+<div class="navbar-header mh50">
+<a href="https://www.seedmm.one/">
+<img alt="JavBus" class="hidden-xs" height="50" src="https://www.seedmm.one/images/logo.png" style="height:40px; margin-top:5px;"/>
+<img alt="JavBus" class="visible-xs-inline" height="50" src="https://www.seedmm.one/images/logo.png"/>
+</a>
+<div class="btn-group pull-right visible-xs-inline" onclick="window.location.href= '/forum/member.php?mod=logging&amp;action=login&amp;referer=%2F%2Fwww.seedmm.one%2F'" role="group" style="margin:8px 8px 0 0;">
+<button aria-expanded="false" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+<img class="avatar" src="https://uc.javbus22.com/uc/avatar.php?uid=0&amp;size=small" style="width:22px; height:22px;"/> </button>
+</div>
+<div class="btn-group pull-right visible-xs-inline" role="group" style="margin:8px 8px 0 0;">
+<button aria-expanded="false" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+<span class="glyphicon glyphicon-globe"></span> <span class="caret"></span>
+</button>
+<ul class="dropdown-menu" role="menu">
+<li><a href="https://www.seedmm.one/en">English</a></li>
+<li><a href="https://www.seedmm.one/ja">日本语</a></li>
+<li><a href="https://www.seedmm.one/ko">한국의</a></li>
+<li><a href="https://www.seedmm.one/">中文</a></li>
+</ul>
+</div>
+<div class="btn-group pull-right visible-xs-inline" role="group" style="margin:8px 8px 0 0;">
+<button aria-expanded="false" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+<span class="glyphicon glyphicon-magnet"></span> <span class="caret"></span>
+</button>
+<ul class="dropdown-menu" role="menu">
+<li id="cellshowall"><a><span class="glyphicon glyphicon-film"></span> 全部影片</a></li>
+</ul>
+</div>
+</div>
+<div class="collapse navbar-collapse" id="navbar">
+<div class="navbar-form navbar-left fullsearch-form">
+<div class="input-group">
+<input class="form-control" id="search-input" placeholder="搜尋 識別碼, 影片, 演員" type="text"/>
+<span class="input-group-btn">
+<button class="btn btn-default" onclick="searchs('search-input')" type="submit">搜尋</button>
+</span>
+</div>
+</div>
+<ul class="nav navbar-nav">
+<li class="active"><a href="https://www.seedmm.one/">有碼</a></li>
+<li><a href="https://www.seedmm.one/uncensored">無碼</a></li>
+<li class="hidden-md hidden-sm"><!-- <div class="icon-new"></div> --><a href="https://www.javbus.one/">歐美</a></li>
+<li><a href="https://www.seedmm.one/forum/">論壇</a></li>
+<li class="dropdown hidden-sm">
+<a aria-expanded="false" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#" role="button">類別 <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="https://www.seedmm.one/genre">有碼類別</a></li>
+<li><a href="https://www.seedmm.one/uncensored/genre">無碼類別</a></li>
+</ul>
+</li>
+<li class="dropdown hidden-sm">
+<a aria-expanded="false" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#" role="button">女優 <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="https://www.seedmm.one/actresses">有碼女優</a></li>
+<li><a href="https://www.seedmm.one/uncensored/actresses">無碼女優</a></li>
+</ul>
+</li>
+<li class="dropdown"><a aria-expanded="false" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="https://www.seedmm.one/" role="button"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li class="visible-md-block visible-sm-block"><a href="https://www.javbus.org/">歐美</a></li>
+<li class="visible-sm-block"><a href="https://www.seedmm.one/genre">有碼類別</a></li>
+<li class="visible-sm-block"><a href="https://www.seedmm.one/uncensored/genre">無碼類別</a></li>
+<li class="visible-sm-block"><a href="https://www.seedmm.one/actresses">有碼女優</a></li>
+<li class="visible-sm-block"><a href="https://www.seedmm.one/uncensored/actresses">無碼女優</a></li>
+<li><a href="https://www.seedmm.one/genre/hd">高清</a></li>
+<li><a href="https://www.seedmm.one/genre/sub">字幕</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right" onclick="window.location.href= '/forum/member.php?mod=logging&amp;action=login&amp;referer=%2F%2Fwww.seedmm.one%2F'">
+<li class="dropdown">
+<a aria-expanded="false" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#" role="button"><img class="avatar" src="https://uc.javbus22.com/uc/avatar.php?uid=0&amp;size=small"/><span class="hidden-md hidden-sm ml5">登入</span> </a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a aria-expanded="false" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#" role="button"><span class="glyphicon glyphicon-globe" style="font-size:12px;"></span> <span class="hidden-md hidden-sm">English</span> <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="https://www.seedmm.one/en">English</a></li>
+<li><a href="https://www.seedmm.one/ja">日本语</a></li>
+<li><a href="https://www.seedmm.one/ko">한국의</a></li>
+<li><a href="https://www.seedmm.one/">中文</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a aria-expanded="false" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#" role="button"><span class="glyphicon glyphicon-magnet" style="font-size:12px;"></span> <span class="hidden-md hidden-sm">已有磁力</span> <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li class="mypointer" id="showall"><a><span class="glyphicon glyphicon-film"></span> 全部影片</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!--/.nav-collapse -->
+</div>
+</nav>
+<div class="row visible-xs-inline footer-bar">
+<div class="col-xs-3 text-center">
+<a class="btn btn-default trigger-overlay" id="menu"><span class="glyphicon glyphicon-align-justify"></span></a>
+</div>
+<div class="col-xs-3 text-center">
+</div>
+<div class="col-xs-3 text-center">
+<a class="btn btn-default" href="/page/2" id="prev" style="display:none"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<div class="col-xs-3 text-center">
+<a class="btn btn-default" href="javascript:window.history.back()" id="back"><span class="glyphicon glyphicon-share-alt flipx"></span></a>
+</div>
+</div>
+<script src="https://www.seedmm.one/js/focus.js?v=8.7"></script> <link href="https://www.seedmm.one/css/main.css" rel="stylesheet" type="text/css"/>
+<script src="https://www.seedmm.one/js/jquery.masonry.min.js"></script>
+<div class="container-fluid">
+<div class="row">
+<style type="text/css">
+@media screen and (max-width: 1490px) {
+.ad-table {display:none;}
+}
+@media screen and (min-width: 1490px) {
+.ad-list {display:none;}
+}
+</style>
+<table class="ad-table">
+<tr>
+<td><a href="http://df.u77777777.com:8118/fa45.html" rel="nofollow" target="_blank"><img height="90" src="/ads/mw728x90_56.gif" width="728"/></a></td>
+<td><a href="https://www.tbvip18.com/?agent_code=2943" rel="nofollow" target="_blank"><img height="90" src="/ads/tb_728x90_1.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="https://www.lsy01.com" rel="nofollow" target="_blank"><img height="90" src="/ads/ysapp_728x90_1.gif" width="728"/></a></td>
+<td><a href="https://www.ob23.com/?i_code=9296181" rel="nofollow" target="_blank"><img height="90" src="/ads/ob_728x90_2.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="http://ky.g66667777.com:8001/dky02.html" rel="nofollow" target="_blank"><img height="90" src="/ads/mw728x90_54.gif" width="728"/></a></td>
+<td><a href="https://javbusxx.com/" rel="nofollow" target="_blank"><img height="90" src="/ads/zn_728x90_1.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="http://www.142904.com/javb.html" rel="nofollow" target="_blank"><img height="90" src="/ads/ylg728x90_2.gif" width="728"/></a></td>
+<td><a href="http://jav.yu77.com" rel="nofollow" target="_blank"><img height="90" src="/ads/twuu_728x90_2.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="http://103.214.164.35/javbus.htm" rel="nofollow" target="_blank"><img height="90" src="/ads/ylg728x90_1.gif" width="728"/></a></td>
+<td><a href="http://107.183.16.165:3369/buscdn.html" rel="nofollow" target="_blank"><img height="90" src="/ads/znj_xyc_728x90_24.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="https://www.yabovip2030.com/?i_code=9410072" rel="nofollow" target="_blank"><img height="90" src="/ads/yb_728x90_7.gif" width="728"/></a></td>
+<td><a href="http://pai.504606.com:606/58603542.html" rel="nofollow" target="_blank"><img height="90" src="/ads/yh_728x90_3.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="https://557961.com:8888?444068&amp;r" rel="nofollow" target="_blank"><img height="90" src="/ads/mw728x90_62.gif" width="728"/></a></td>
+<td><a href="http://172.246.105.60:5869/buscdn.html" rel="nofollow" target="_blank"><img height="90" src="/ads/znj_xyc_728x90_22.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="http://vip.988340.com:966/66055.html" rel="nofollow" target="_blank"><img height="90" src="/ads/yh_728x90_4.gif" width="728"/></a></td>
+<td><a href="http://23.225.133.126:9999/javbus.htm" rel="nofollow" target="_blank"><img height="90" src="/ads/wns728x90_3.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="https://www.bobty22.com/?agent_code=22124" rel="nofollow" target="_blank"><img height="90" src="/ads/bob_728x90_5.gif" width="728"/></a></td>
+<td><a href="https://www.lsy01.com" rel="nofollow" target="_blank"><img height="90" src="/ads/ysapp_728x90_1.gif" width="728"/></a></td>
+</tr>
+</table>
+<div class="ad-list">
+<div class="pb10 text-center bn728-93"><a href="http://df.u77777777.com:8118/fa45.html" rel="nofollow" target="_blank"><img height="90" src="/ads/mw728x90_56.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://www.tbvip18.com/?agent_code=2943" rel="nofollow" target="_blank"><img height="90" src="/ads/tb_728x90_1.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://www.lsy01.com" rel="nofollow" target="_blank"><img height="90" src="/ads/ysapp_728x90_1.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://www.ob23.com/?i_code=9296181" rel="nofollow" target="_blank"><img height="90" src="/ads/ob_728x90_2.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="http://ky.g66667777.com:8001/dky02.html" rel="nofollow" target="_blank"><img height="90" src="/ads/mw728x90_54.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://javbusxx.com/" rel="nofollow" target="_blank"><img height="90" src="/ads/zn_728x90_1.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="http://www.142904.com/javb.html" rel="nofollow" target="_blank"><img height="90" src="/ads/ylg728x90_2.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="http://jav.yu77.com" rel="nofollow" target="_blank"><img height="90" src="/ads/twuu_728x90_2.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="http://103.214.164.35/javbus.htm" rel="nofollow" target="_blank"><img height="90" src="/ads/ylg728x90_1.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="http://107.183.16.165:3369/buscdn.html" rel="nofollow" target="_blank"><img height="90" src="/ads/znj_xyc_728x90_24.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://www.yabovip2030.com/?i_code=9410072" rel="nofollow" target="_blank"><img height="90" src="/ads/yb_728x90_7.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="http://pai.504606.com:606/58603542.html" rel="nofollow" target="_blank"><img height="90" src="/ads/yh_728x90_3.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://557961.com:8888?444068&amp;r" rel="nofollow" target="_blank"><img height="90" src="/ads/mw728x90_62.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="http://172.246.105.60:5869/buscdn.html" rel="nofollow" target="_blank"><img height="90" src="/ads/znj_xyc_728x90_22.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="http://vip.988340.com:966/66055.html" rel="nofollow" target="_blank"><img height="90" src="/ads/yh_728x90_4.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="http://23.225.133.126:9999/javbus.htm" rel="nofollow" target="_blank"><img height="90" src="/ads/wns728x90_3.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://www.bobty22.com/?agent_code=22124" rel="nofollow" target="_blank"><img height="90" src="/ads/bob_728x90_5.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://www.lsy01.com" rel="nofollow" target="_blank"><img height="90" src="/ads/ysapp_728x90_1.gif" width="728"/></a></div></div>
+<div class="alert alert-info alert-dismissable alert-common" style="position:relative">
+<button class="close" data-dismiss="alert" onclick='javascript:$.cookie("cnadd29", "off",{expires: 365,path: "/"})' style="position:absolute; right:8px; top:3px;" type="button">×</button>
+<div class="row">
+<div class="col-xs-12 col-md-6 col-lg-3 text-center"><strong>永久域名：</strong><a href="https://www.javbus.com" target="_blank">https://www.javbus.com</a></div>
+<div class="col-xs-12 col-md-6 col-lg-3 text-center"><strong>防屏蔽地址：</strong><a href="https://www.fanbus.cloud" rel="nofollow">https://www.fanbus.cloud</a></div><div class="col-xs-12 col-md-6 col-lg-3 text-center"><strong>防屏蔽地址：</strong><a href="https://www.busfan.life" rel="nofollow">https://www.busfan.life</a></div><div class="col-xs-12 col-md-6 col-lg-3 text-center"><strong>防屏蔽地址：</strong><a href="https://www.fanbus.cam" rel="nofollow">https://www.fanbus.cam</a></div>
+</div>
+</div>
+<div id="waterfall">
+<div id="waterfall">
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/DANDY-724">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tib.jpg" title="欲求不満を隠せないぴったり着衣爆乳で無自覚に挑発してしまう人妻は大きな胸を揉まれても拒めない"/>
+</div>
+<div class="photo-info">
+<span>欲求不満を隠せないぴったり着衣爆乳で無自覚に挑発してしまう人妻は大きな胸を揉まれても拒めない<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>DANDY-724</date> / <date>2020-08-13</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/NHDTB-425">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tkp.jpg" title="寝ている姉のアナルを毎晩こっそりいじっていたらち○ぽが根元まで入るほどガバガバになりました2"/>
+</div>
+<div class="photo-info">
+<span>寝ている姉のアナルを毎晩こっそりいじっていたらち○ぽが根元まで入るほどガバガバになりました2<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>NHDTB-425</date> / <date>2020-08-13</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/JRZD-985">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tru.jpg" title="初撮り人妻ドキュメント 永野あかり"/>
+</div>
+<div class="photo-info">
+<span>初撮り人妻ドキュメント 永野あかり<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>JRZD-985</date> / <date>2020-08-13</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/HBAD-549">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tkv.jpg" title="高飛車家庭教師を肉欲快楽処理女に堕とす 藤森里穂"/>
+</div>
+<div class="photo-info">
+<span>高飛車家庭教師を肉欲快楽処理女に堕とす 藤森里穂<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>HBAD-549</date> / <date>2020-08-13</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/FSDSS-080">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tkw.jpg" title="桃尻かなめとイチャラブ学園性活"/>
+</div>
+<div class="photo-info">
+<span>桃尻かなめとイチャラブ学園性活<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>FSDSS-080</date> / <date>2020-08-13</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/FSDSS-079">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tkx.jpg" title="即ハメおねだりご奉仕メイド 二階堂夢"/>
+</div>
+<div class="photo-info">
+<span>即ハメおねだりご奉仕メイド 二階堂夢<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>FSDSS-079</date> / <date>2020-08-13</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/FSDSS-078">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tky.jpg" title="我慢して我慢して我慢しきれなかった彼女のお姉さんと僕の禁断SEXにのめり込んだ知られてはいけない2日間。橋本ありな"/>
+</div>
+<div class="photo-info">
+<span>我慢して我慢して我慢しきれなかった彼女のお姉さんと僕の禁断SEXにのめり込んだ知られてはいけない2日間。橋本ありな<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>FSDSS-078</date> / <date>2020-08-13</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/FSDSS-077">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tkz.jpg" title="大嫌いなセクハラ機長とステイ先のホテルでまさかの相部屋…絶倫粘着ピストンで一晩中イカされ続けた色白スレンダーCA 天使もえ"/>
+</div>
+<div class="photo-info">
+<span>大嫌いなセクハラ機長とステイ先のホテルでまさかの相部屋…絶倫粘着ピストンで一晩中イカされ続けた色白スレンダーCA 天使もえ<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>FSDSS-077</date> / <date>2020-08-13</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/FSDSS-075">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tl1.jpg" title="じっくり丁寧フェラで大量顔射 月乃さくら"/>
+</div>
+<div class="photo-info">
+<span>じっくり丁寧フェラで大量顔射 月乃さくら<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>FSDSS-075</date> / <date>2020-08-13</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/FSDSS-074">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tl2.jpg" title="天川そらは騎乗位博士"/>
+</div>
+<div class="photo-info">
+<span>天川そらは騎乗位博士<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>FSDSS-074</date> / <date>2020-08-13</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/SDFK-030">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7t4t.jpg" title="マジックミラー号「童貞くんのオナニーのお手伝いしてくれませんか…」 海水浴場で声を掛けた心優しい水着美女が童貞くんを赤面筆おろし！ りかさん（26歳）エステティシャン"/>
+</div>
+<div class="photo-info">
+<span>マジックミラー号「童貞くんのオナニーのお手伝いしてくれませんか…」 海水浴場で声を掛けた心優しい水着美女が童貞くんを赤面筆おろし！ りかさん（26歳）エステティシャン<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>SDFK-030</date> / <date>2020-08-12</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/MMGH-276">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7t4u.jpg" title="催‘淫’術で快楽堕ち！Jカップ清楚系美女がおっぱいブルンブルン震わせてイキ狂う！！ みのり（23）"/>
+</div>
+<div class="photo-info">
+<span>催‘淫’術で快楽堕ち！Jカップ清楚系美女がおっぱいブルンブルン震わせてイキ狂う！！ みのり（23）<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>MMGH-276</date> / <date>2020-08-12</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/FONE-116">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7sum.jpg" title="「人見知りでコミュ障ですが、乳頭は365日ニョッキリピンコ勃ち主張激しめな私は変態ですか？」乳首で逝く超敏感炉利子との7日間の猥褻記録"/>
+</div>
+<div class="photo-info">
+<span>「人見知りでコミュ障ですが、乳頭は365日ニョッキリピンコ勃ち主張激しめな私は変態ですか？」乳首で逝く超敏感炉利子との7日間の猥褻記録<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>FONE-116</date> / <date>2020-08-12</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/YAKO-014">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7sun.jpg" title="タワマンパーティーで出会ったミスキャンパス・ファイナリストでアナウンサーの卵（某局内定済？）との過激動画をリベンジポルノ流出 顔良しスタイル良し頭良しの三拍子そろった意識高い系女子・理沙さん"/>
+</div>
+<div class="photo-info">
+<span>タワマンパーティーで出会ったミスキャンパス・ファイナリストでアナウンサーの卵（某局内定済？）との過激動画をリベンジポルノ流出 顔良しスタイル良し頭良しの三拍子そろった意識高い系女子・理沙さん<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>YAKO-014</date> / <date>2020-08-12</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/NINE-036">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7suo.jpg" title="セックスレス20年！欲求不満が産み出したA5ランク熟成肉の爆乳美人妻モンスター！人格崩壊アへ顔で逝きまくるぅぅ！！雅子さん（42）"/>
+</div>
+<div class="photo-info">
+<span>セックスレス20年！欲求不満が産み出したA5ランク熟成肉の爆乳美人妻モンスター！人格崩壊アへ顔で逝きまくるぅぅ！！雅子さん（42）<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>NINE-036</date> / <date>2020-08-12</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/HONB-185">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7sup.jpg" title="あのキャバ嬢に3回中出し天然Fカップ"/>
+</div>
+<div class="photo-info">
+<span>あのキャバ嬢に3回中出し天然Fカップ<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>HONB-185</date> / <date>2020-08-12</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/HONB-184">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7suq.jpg" title="【神可愛い】2人期間限定販売細身の学生は途中から生姦笑顔がキュートな美少女は鬼イキ永久保存版"/>
+</div>
+<div class="photo-info">
+<span>【神可愛い】2人期間限定販売細身の学生は途中から生姦笑顔がキュートな美少女は鬼イキ永久保存版<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>HONB-184</date> / <date>2020-08-12</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/HONB-183">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7sur.jpg" title="地方から上京した2人の若い日本人ギャルとラブホでハメた時の動画販売。"/>
+</div>
+<div class="photo-info">
+<span>地方から上京した2人の若い日本人ギャルとラブホでハメた時の動画販売。<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>HONB-183</date> / <date>2020-08-12</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/GONE-009">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7sus.jpg" title="ムチムチ色白エロボディー蒼井れいなの高速ウルトラハードピストン騎乗位"/>
+</div>
+<div class="photo-info">
+<span>ムチムチ色白エロボディー蒼井れいなの高速ウルトラハードピストン騎乗位<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>GONE-009</date> / <date>2020-08-12</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/SVRE-002">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tda.jpg" title="新無人島レ●プサバイバル 孤島に住むヘンなガイジンに会いに行ったらレ●プされた 小泉ミツカ"/>
+</div>
+<div class="photo-info">
+<span>新無人島レ●プサバイバル 孤島に住むヘンなガイジンに会いに行ったらレ●プされた 小泉ミツカ<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>SVRE-002</date> / <date>2020-08-11</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/STARS-273">
+<div class="photo-frame">
+<img src="https://pics.dmm.co.jp/digital/video/1stars00273/1stars00273ps.jpg" title="デビュー2周年記念 25SEX 8時間スペシャルBEST 完全保存版［2枚組］ 本庄鈴"/>
+</div>
+<div class="photo-info">
+<span>デビュー2周年記念 25SEX 8時間スペシャルBEST 完全保存版［2枚組］ 本庄鈴<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>STARS-273</date> / <date>2020-08-11</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/MUCH-104">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7suu.jpg" title="爆乳！むちぽちゃマニアックス 10人どすけべセックス 8時間2枚組"/>
+</div>
+<div class="photo-info">
+<span>爆乳！むちぽちゃマニアックス 10人どすけべセックス 8時間2枚組<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>MUCH-104</date> / <date>2020-08-11</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/KTRA-238">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7suv.jpg" title="ツインテールの妹に中出しVol.1 8時間2枚組"/>
+</div>
+<div class="photo-info">
+<span>ツインテールの妹に中出しVol.1 8時間2枚組<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>KTRA-238</date> / <date>2020-08-11</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/KTRA-237">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7suw.jpg" title="いもうとのデカパイぜんぶお兄ちゃんのモノ 巨乳いもうと10人連続セックス Vol.4 8時間2枚組"/>
+</div>
+<div class="photo-info">
+<span>いもうとのデカパイぜんぶお兄ちゃんのモノ 巨乳いもうと10人連続セックス Vol.4 8時間2枚組<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>KTRA-237</date> / <date>2020-08-11</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/KTRA-236">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7sux.jpg" title="隠れ巨乳の地味子10人連続セックス 8時間2枚組"/>
+</div>
+<div class="photo-info">
+<span>隠れ巨乳の地味子10人連続セックス 8時間2枚組<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>KTRA-236</date> / <date>2020-08-11</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/ARM-894">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7sud.jpg" title="パンチラ見せつける女って見せるだけじゃ終わらないよな！パンチラからの複合テクでイカせてくれるって、天使じゃね！？"/>
+</div>
+<div class="photo-info">
+<span>パンチラ見せつける女って見せるだけじゃ終わらないよな！パンチラからの複合テクでイカせてくれるって、天使じゃね！？<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>ARM-894</date> / <date>2020-08-08</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/DPSDL-004">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7ub3.jpg" title="SNSで見つけた芸能人になりたい地方在住の色白ムチムチFカップ未成年女子大生（19歳）を騙して中出ししまくった過激生投稿映像"/>
+</div>
+<div class="photo-info">
+<span>SNSで見つけた芸能人になりたい地方在住の色白ムチムチFカップ未成年女子大生（19歳）を騙して中出ししまくった過激生投稿映像<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>DPSDL-004</date> / <date>2020-08-07</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/DPSDL-002">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7ub5.jpg" title="重量感あふれる巨尻！どすけべ下品妻と一日中ラブホにこもってイキ狂い中出しSEX！！"/>
+</div>
+<div class="photo-info">
+<span>重量感あふれる巨尻！どすけべ下品妻と一日中ラブホにこもってイキ狂い中出しSEX！！<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>DPSDL-002</date> / <date>2020-08-07</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/KUM-005">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7tlz.jpg" title="最狂の女王 波多野結衣"/>
+</div>
+<div class="photo-info">
+<span>最狂の女王 波多野結衣<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>KUM-005</date> / <date>2020-08-07</date></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a class="movie-box" href="https://www.seedmm.one/SPO-011">
+<div class="photo-frame">
+<img src="https://pics.javcdn.pw/thumb/7soz.jpg" title="セーラー服と機関坊 初撮り生中出し3"/>
+</div>
+<div class="photo-info">
+<span>セーラー服と機関坊 初撮り生中出し3<br/>
+<div class="item-tag">
+<button class="btn btn-xs btn-primary" disabled="disabled" title="包含高清HD的磁力連結">高清</button>
+<button class="btn btn-xs btn-success" disabled="disabled" title="包含最新出種的磁力連結">今日新種</button> </div>
+<date>SPO-011</date> / <date>2020-08-01</date></span>
+</div>
+</a>
+</div>
+</div> </div>
+</div>
+</div>
+<script language="JavaScript">
+    (function($) {
+        $('#waterfall').masonry({
+            itemSelector: ".item",
+            isAnimated: false,
+            isFitWidth: true
+        });
+    })(jQuery);
+</script>
+<table class="ad-table">
+<tr>
+<td><a href="https://www.lsy01.com" rel="nofollow" target="_blank"><img height="90" src="/ads/ysapp_728x90_3.gif" width="728"/></a></td>
+<td><a href="https://clappa.cc/?ch=javbus" rel="nofollow" target="_blank"><img height="90" src="/ads/cl_728x90_2.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="https://www.lsy01.com" rel="nofollow" target="_blank"><img height="90" src="/ads/ysapp_728x90_3.gif" width="728"/></a></td>
+<td><a href="https://www.tbvip18.com/?agent_code=2943" rel="nofollow" target="_blank"><img height="90" src="/ads/tb_728x90_1.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><script async="" data-cfasync="false" src="https://poweredby.jads.co/js/jads.js"></script><ins data-height="90" data-width="728" id="365002"></ins><script async="" data-cfasync="false" type="text/javascript">(adsbyjuicy = window.adsbyjuicy || []).push({"adzone":365002});</script></td>
+<td><a href="https://xunkaixin.xyz/#/?ai=157284" rel="nofollow" target="_blank"><img height="90" src="/ads/51fl_728x90_1.jpg" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="https://www.yabovip2030.com/?i_code=9410072" rel="nofollow" target="_blank"><img height="90" src="/ads/yb_728x90_8.gif" width="728"/></a></td>
+<td><a href="https://www.ob23.com/?i_code=9296181" rel="nofollow" target="_blank"><img height="90" src="/ads/ob_728x90_2.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="http://jav.yu77.com" rel="nofollow" target="_blank"><img height="90" src="/ads/twuu_728x90_3.gif" width="728"/></a></td>
+<td><a href="https://javbusxx.com/" rel="nofollow" target="_blank"><img height="90" src="/ads/zn_728x90_1.gif" width="728"/></a></td>
+</tr>
+<tr>
+<td><a href="https://www.bobty22.com/?agent_code=22124" rel="nofollow" target="_blank"><img height="90" src="/ads/bob_728x90_2.gif" width="728"/></a></td>
+<td><a href="https://clappa.cc/?ch=javbus" rel="nofollow" target="_blank"><img height="90" src="/ads/cl_728x90_2.gif" width="728"/></a></td>
+</tr>
+</table>
+<div class="ad-list">
+<div class="pb10 text-center bn728-93"><a href="https://www.lsy01.com" rel="nofollow" target="_blank"><img height="90" src="/ads/ysapp_728x90_3.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://clappa.cc/?ch=javbus" rel="nofollow" target="_blank"><img height="90" src="/ads/cl_728x90_2.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://www.lsy01.com" rel="nofollow" target="_blank"><img height="90" src="/ads/ysapp_728x90_3.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://www.tbvip18.com/?agent_code=2943" rel="nofollow" target="_blank"><img height="90" src="/ads/tb_728x90_1.gif" width="728"/></a></div> <div class="hidden-xs text-center"><script async="" data-cfasync="false" src="https://poweredby.jads.co/js/jads.js"></script><ins data-height="90" data-width="728" id="365002"></ins><script async="" data-cfasync="false" type="text/javascript">(adsbyjuicy = window.adsbyjuicy || []).push({"adzone":365002});</script></div> <div class="pb10 text-center bn728-93"><a href="https://xunkaixin.xyz/#/?ai=157284" rel="nofollow" target="_blank"><img height="90" src="/ads/51fl_728x90_1.jpg" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://www.yabovip2030.com/?i_code=9410072" rel="nofollow" target="_blank"><img height="90" src="/ads/yb_728x90_8.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://www.ob23.com/?i_code=9296181" rel="nofollow" target="_blank"><img height="90" src="/ads/ob_728x90_2.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="http://jav.yu77.com" rel="nofollow" target="_blank"><img height="90" src="/ads/twuu_728x90_3.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://javbusxx.com/" rel="nofollow" target="_blank"><img height="90" src="/ads/zn_728x90_1.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://www.bobty22.com/?agent_code=22124" rel="nofollow" target="_blank"><img height="90" src="/ads/bob_728x90_2.gif" width="728"/></a></div> <div class="pb10 text-center bn728-93"><a href="https://clappa.cc/?ch=javbus" rel="nofollow" target="_blank"><img height="90" src="/ads/cl_728x90_2.gif" width="728"/></a></div></div>
+<div class="text-center hidden-xs">
+<ul class="pagination pagination-lg">
+<li class="active"><a href="/page/1">1</a></li><li><a href="/page/2">2</a></li><li><a href="/page/3">3</a></li><li><a href="/page/4">4</a></li><li><a href="/page/5">5</a></li><li><a href="/page/6">6</a></li><li><a href="/page/7">7</a></li><li><a href="/page/8">8</a></li><li><a href="/page/9">9</a></li><li><a href="/page/10">10</a></li> <li>
+<a href="/page/2" id="next">下一頁</a>
+</li>
+</ul>
+</div><footer class="footer hidden-xs">
+<div class="container-fluid">
+<p><a href="https://www.seedmm.one/doc/terms">Terms</a> / <a href="https://www.seedmm.one/doc/privacy">Privacy</a> / <a href="https://www.seedmm.one/doc/usc">2257</a> / <a href="http://www.rtalabel.org/" rel="external nofollow" target="_blank">RTA</a> / <a href="javascript:bootstr(1);" r="">廣告投放</a> / <a href="javascript:bootstr(2);">聯絡我們</a><br/><a data-toggle="modal" href="#formModal" id="adscontact"></a>
+        Copyright © 2013 JavBus. All Rights Reserved. All other trademarks and copyrights are the property of their respective holders. The reviews and comments expressed at or through this website are the opinions of the individual author and do not reflect the opinions or views of JavBus. JavBus is not responsible for the accuracy of any of the information supplied here.</p>
+</div>
+</footer>
+<div class="visible-xs-block footer-bar-placeholder"></div>
+<script language="javascript">
+    function bootstr(type){
+    	ads = "廣告投放";
+    	contact = "聯絡我們";
+    	translate = "翻譯";
+    	$("#adstype").val(type);
+    	if(type==1){
+    		$("#contactModalLab").html(ads);
+    		$("#qqskype").show();
+    		$("#transinfo").hide();
+    		$("#translanguage").hide();
+    		$("#mailcontent").show();
+    	}else if(type==2){
+    		$("#contactModalLab").html(contact);
+    		$("#qqskype").show();
+    		$("#transinfo").hide();
+    		$("#translanguage").hide();
+    		$("#mailcontent").show();
+    	}else if(type==3){
+    		$("#contactModalLab").html(translate);
+    		$("#qqskype").hide();
+    		$("#transinfo").show();
+    		$("#translanguage").show();
+    		$("#mailcontent").hide();
+    	}
+    	$("#adscontact").trigger("click");
+		getverifycode();
+    };
+    function getverifycode(){
+       $('#verify').attr("src","/post/verify?"+Math.random()*10000);
+    };
+    function IsMail(mail){
+     var remail= /^([a-zA-Z0-9_-])+(\.)?([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+     return(remail.test(mail));
+    };
+    function checkform(){
+    	var post = true;
+      if($("#verifycode").val().length!=5){
+    	  	alert("驗證碼輸入錯誤!")
+    		$("#verifycode").focus();
+    		post = false;
+    	  }
+      if($("#contact").val().length>255){
+    	  	alert("聯繫方式字數過多!")
+    		$("#contact").focus();
+    		post = false;
+    	  }
+
+      if(!IsMail($("#mail").val())){
+    	alert("請輸入正確的電郵地址!")
+     	$("#mail").focus();
+        post = false;
+      }
+
+      if($("#intention").val().length>25500){
+    	  	alert("投放意向字數過多!")
+    		$("#intention").focus();
+    		post = false;
+    	  }
+
+      if($("#trans").val().length>255){
+    	  	alert("Too many words in your language textbox!")
+    		$("#intention").focus();
+    		post = false;
+    	  }
+      if(post== true){
+    	  $("#modalclose").trigger("click");
+    	  $("#postform").attr("action", "/post/contact");
+    	  $("#postform").submit();
+    	}
+      return post;
+    };
+</script>
+<script>
+$("#showmag,#cellshowmag,#resultshowmag").click(function(){
+	$.cookie("existmag", "mag",{expires:365,path:'/'});
+	location.reload()
+});
+
+$("#showall,#cellshowall,#resultshowall").click(function(){
+	$.cookie("existmag", "all",{expires:365,path:'/'});
+	location.reload()
+});
+$("#showonline").click(function(){
+	$.cookie("existmag", "online",{expires:365,path:'/'});
+	location.reload()
+});
+$(".info .mypointer").click(function(){
+	var obj = $(this);
+	var code = obj.attr('value');
+	var token = $("#token").val();
+	var e = "../ajax/addfavorite.php?code=" + encodeURIComponent(code) + "&token=" + encodeURIComponent(token) + "&floor=" + Math.floor(Math.random() * 1e3 + 1);
+    $.ajax({
+        url: e,
+        type: "POST",
+		//dataType: "json",
+		cache:false,
+        success: function (json) {
+			//obj.html(json);
+			ajaxobj=eval("("+json+")");
+			if(ajaxobj.act=='err'){
+				alert('收藏次數達上限，請稍候再試');
+			}else{
+				obj.html(ajaxobj.act);
+				obj.attr('value',ajaxobj.code);
+				obj.attr('title',ajaxobj.title);
+				$("#token").val(ajaxobj.token);
+			}
+        }
+    });
+});
+
+$(".glyphicon-heart-empty").hover(function () {
+    $(this).removeClass('glyphicon-heart-empty');
+	$(this).addClass('glyphicon-heart');
+}, function () {
+    $(this).removeClass('glyphicon-heart');
+    $(this).addClass('glyphicon-heart-empty');
+});
+$(".glyphicon-heart").hover(function () {
+    $(this).removeClass('glyphicon-heart');
+	$(this).addClass('glyphicon-heart-empty');
+}, function () {
+    $(this).removeClass('glyphicon-heart-empty');
+    $(this).addClass('glyphicon-heart');
+});
+</script>
+<!-- Modal Forms -->
+<div aria-hidden="true" aria-labelledby="formModalLabel" class="modal fade" id="formModal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-label="Close" class="close" data-dismiss="modal" id="modalclose" type="button"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title" id="contactModalLab">聯絡我們</h4>
+</div>
+<div class="modal-body">
+<form class="form-horizontal" enctype="multipart/form-data" id="postform" method="post" name="postform">
+<fieldset>
+<div class="form-group" id="qqskype">
+<label class="col-sm-4 control-label" for="contact">QQ / Skype</label>
+<div class="col-sm-6">
+<input class="form-control" id="contact" name="contact" placeholder="" type="text"/>
+</div>
+</div>
+<div class="form-group">
+<label class="col-sm-4 control-label" for="mail">Email</label>
+<div class="col-sm-6">
+<input class="form-control" id="mail" name="mail" placeholder="" type="text"/>
+</div>
+</div>
+<div class="form-group" id="translanguage">
+<label class="col-sm-4 control-label" for="trans">Your Language</label>
+<div class="col-sm-6">
+<input class="form-control" id="trans" name="trans" placeholder="" type="text"/>
+</div>
+</div>
+<div class="form-group" id="mailcontent">
+<label class="col-sm-4 control-label" for="intention" id="inten-trans">內容</label>
+<div class="col-sm-6">
+<textarea class="form-control" id="intention" name="intention" rows="9"></textarea>
+</div>
+</div>
+<div class="form-group">
+<label class="col-sm-4 control-label" for="verify">驗證碼</label>
+<div class="col-sm-6">
+<input id="verifycode" name="verifycode" style="width:50px" type="text"/>
+<img id="verify" onclick="getverifycode()" src="" style="cursor: pointer; vertical-align:middle;"/>
+</div>
+</div>
+<input id="adstype" name="adstype" type="hidden" value="1"/>
+</fieldset>
+</form>
+</div>
+<div class="modal-footer">
+<button button="" class="btn btn-primary" onclick="checkform()" type="button">送出</button>
+<button button="" class="btn btn-default" data-dismiss="modal" type="button">關閉</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ////////////////////////////////////////////////// -->
+<div class="overlay overlay-contentscale">
+<div class="row">
+<div class="col-xs-12 text-center ptb20">
+<div class="input-group col-xs-offset-2 col-xs-8">
+<input class="form-control" id="search-input-mobile" placeholder="搜尋 識別碼, 影片, 演員" type="text"/>
+<span class="input-group-btn">
+<button class="btn btn-default" onclick="searchs('search-input-mobile')" type="submit">搜尋</button>
+</span>
+</div>
+</div>
+<div class="col-xs-6 text-center"><a href="https://www.seedmm.one/">有碼</a></div>
+<div class="col-xs-6 text-center"><a href="https://www.seedmm.one/uncensored">無碼</a></div>
+<div class="col-xs-6 text-center"><a href="https://www.seedmm.one/genre">有碼類別</a></div>
+<div class="col-xs-6 text-center"><a href="https://www.seedmm.one/uncensored/genre">無碼類別</a></div>
+<div class="col-xs-6 text-center"><a href="https://www.seedmm.one/actresses">有碼女優</a></div>
+<div class="col-xs-6 text-center"><a href="https://www.seedmm.one/uncensored/actresses">無碼女優</a></div>
+<div class="col-xs-6 text-center"><a href="https://www.javbus.one/">歐美</a></div>
+<div class="col-xs-6 text-center"><a href="https://www.seedmm.one/forum/">論壇</a></div>
+<div class="col-xs-12 text-center overlay-close">
+<i class="glyphicon glyphicon-remove"></i>
+</div>
+</div>
+</div>
+<script src="https://www.seedmm.one/js/nav.overlay.js?v=10.30.3"></script>
+</body>
+</html>
+
